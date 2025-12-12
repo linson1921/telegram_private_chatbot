@@ -305,7 +305,7 @@ async function handleCallbackQuery(query, env, ctx) {
             await tgCall(env, "editMessageText", {
                 chat_id: userId,
                 message_id: query.message.message_id,
-                text: "✅ **验证成功**\n\n您现在可以自由对话了。",
+                text: "✅ **验证成功**\n\n您现在可以自由对话了。反馈最好带上永劫的视频，请详细描述清楚你在使用过程中遇到了什么问题，bug反馈，建议都可以聊聊",
                 parse_mode: "Markdown"
             });
 
